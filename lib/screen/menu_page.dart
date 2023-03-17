@@ -1,4 +1,6 @@
 import 'package:eschool/consts/color.dart';
+import 'package:eschool/screen/attendance.dart';
+import 'package:eschool/screen/attendance_tabar.dart';
 import 'package:flutter/material.dart';
 
 
@@ -59,20 +61,27 @@ class MenuPage extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Column(
-                children: [
-                  Container(
+              InkWell(
+                onTap: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => AttendanceTababe()),);
+                },
+                child: Column(
+                  children: [
+                    Container(
 
-                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(15), color: AppColor.menuColor,),
-                    height: 75,
-                    width: 75,
-                    child: Icon(Icons.calendar_month, size: 45, color: AppColor.menuIconColor,),
+                      decoration: BoxDecoration(borderRadius: BorderRadius.circular(15), color: AppColor.menuColor,),
+                      height: 75,
+                      width: 75,
+                      child: Icon(Icons.calendar_month, size: 45, color: AppColor.menuIconColor,),
 
 
-                  ),
-                  SizedBox(height: 10,),
-                  Text('Attendance', style: TextStyle(fontSize: 17),)
-                ],
+                    ),
+                    SizedBox(height: 10,),
+                    Text('Attendance', style: TextStyle(fontSize: 17),)
+                  ],
+                ),
               ),
               Column(
                 children: [
@@ -86,7 +95,7 @@ class MenuPage extends StatelessWidget {
 
                   ),
                   SizedBox(height: 10,),
-                  Text('Attendance', style: TextStyle(fontSize: 17),)
+                  Text('Timetable', style: TextStyle(fontSize: 17),)
                 ],
               ),
               Column(
@@ -102,7 +111,7 @@ class MenuPage extends StatelessWidget {
 
                   ),
                   SizedBox(height: 10,),
-                  Text('Attendance', style: TextStyle(fontSize: 17),)
+                  Text('Notice Board', style: TextStyle(fontSize: 17),)
                 ],
               ),
             ],
@@ -126,7 +135,7 @@ class MenuPage extends StatelessWidget {
 
                     ),
                     SizedBox(height: 10,),
-                    Text('Attendance', style: TextStyle(fontSize: 17),)
+                    Text('Parent Profile', style: TextStyle(fontSize: 17),)
                   ],
                 ),
                 Column(
@@ -142,7 +151,7 @@ class MenuPage extends StatelessWidget {
 
                     ),
                     SizedBox(height: 10,),
-                    Text('Attendance', style: TextStyle(fontSize: 17),)
+                    Text('Holidays', style: TextStyle(fontSize: 17),)
                   ],
 
                 ),
@@ -159,7 +168,7 @@ class MenuPage extends StatelessWidget {
 
                     ),
                     SizedBox(height: 10,),
-                    Text('Attendance', style: TextStyle(fontSize: 17),)
+                    Text('Settings', style: TextStyle(fontSize: 17),)
                   ],
                 ),
               ],

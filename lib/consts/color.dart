@@ -19,5 +19,6 @@ class AppColor{
   static const subject9 = Color(0xfffE9921B);
   static const menuColor = Color(0xfffDFF6EF);
   static const menuIconColor = Color(0xfff1A646F);
+  static const lightBlue = Color(0xfff507C98);
 
 }

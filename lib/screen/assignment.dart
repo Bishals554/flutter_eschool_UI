@@ -122,7 +122,7 @@ class _AssignmentPageState extends State<AssignmentPage> with SingleTickerProvid
                   margin: EdgeInsets.only(left: 70, right: 20, top: 20),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
-                    color: Colors.grey.shade100
+                    color: Colors.grey.shade200
                   ),
                   height: 120,
 
@@ -138,6 +138,10 @@ class _AssignmentPageState extends State<AssignmentPage> with SingleTickerProvid
                     ),
                     height: 80,
                     width: 90,
+                    child: Padding(
+                      padding: const EdgeInsets.all(15),
+                      child: Image.asset('assets/computer.png', color: Colors.white),
+                    ),
                   ),
                 ),
 
@@ -178,7 +182,7 @@ class _AssignmentPageState extends State<AssignmentPage> with SingleTickerProvid
                   margin: EdgeInsets.only(left: 70, right: 20, top: 20),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
-                    color: Colors.grey.shade100
+                    color: Colors.grey.shade200
                   ),
                   height: 120,
 
@@ -194,6 +198,10 @@ class _AssignmentPageState extends State<AssignmentPage> with SingleTickerProvid
                     ),
                     height: 80,
                     width: 90,
+                    child: Padding(
+                      padding: const EdgeInsets.all(15),
+                      child: Image.asset('assets/guitar.png', color: Colors.white),
+                    ),
                   ),
                 ),
 
@@ -234,9 +242,10 @@ class _AssignmentPageState extends State<AssignmentPage> with SingleTickerProvid
                   margin: EdgeInsets.only(left: 70, right: 20, top: 20),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
-                    color: Colors.grey.shade100
+                    color: Colors.grey.shade200
                   ),
                   height: 120,
+
 
                 ),
 
@@ -250,6 +259,10 @@ class _AssignmentPageState extends State<AssignmentPage> with SingleTickerProvid
                     ),
                     height: 80,
                     width: 90,
+                    child: Padding(
+                      padding: const EdgeInsets.all(12),
+                      child: Image.asset('assets/microscope.png', color: Colors.white),
+                    ),
                   ),
                 ),
 
@@ -290,7 +303,7 @@ class _AssignmentPageState extends State<AssignmentPage> with SingleTickerProvid
                   margin: EdgeInsets.only(left: 70, right: 20, top: 20),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
-                    color: Colors.grey.shade100
+                    color: Colors.grey.shade200
                   ),
                   height: 120,
 
@@ -306,6 +319,10 @@ class _AssignmentPageState extends State<AssignmentPage> with SingleTickerProvid
                     ),
                     height: 80,
                     width: 90,
+                    child: Padding(
+                      padding: const EdgeInsets.all(15),
+                      child: Image.asset('assets/math.png', color: Colors.white),
+                    ),
                   ),
                 ),
 
