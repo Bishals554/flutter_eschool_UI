@@ -1,18 +1,19 @@
 import 'package:eschool/screen/assignment.dart';
 import 'package:eschool/screen/attendance.dart';
 import 'package:eschool/screen/home_page.dart';
-import 'package:eschool/screen/menu_page.dart';
 import 'package:flutter/material.dart';
 
 class AttendanceTababe extends StatefulWidget {
+  const AttendanceTababe({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _AttendanceTababeState createState() => _AttendanceTababeState();
 }
 
 class _AttendanceTababeState extends State<AttendanceTababe>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
-  bool _showMenu = false;
 
   @override
   void initState() {
@@ -38,12 +39,9 @@ class _AttendanceTababeState extends State<AttendanceTababe>
               children: <Widget>[
                 // First tab
 
-
-                 AttendancePage(),
+                AttendancePage(),
                 HomePage(),
                 AssignmentPage(),
-
-
               ],
             ),
           ),
