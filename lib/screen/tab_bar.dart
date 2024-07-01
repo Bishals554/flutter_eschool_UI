@@ -4,7 +4,10 @@ import 'package:eschool/screen/menu_page.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _MyHomePageState createState() => _MyHomePageState();
 }
 
@@ -36,14 +39,14 @@ class _MyHomePageState extends State<MyHomePage>
               index: _tabController.index,
               children: <Widget>[
                 // First tab
-                HomePage(),
-                AssignmentPage(),
+                const HomePage(),
+                const AssignmentPage(),
                 Opacity(
                   opacity: 0.9,
                   child: ColorFiltered(
                       colorFilter: ColorFilter.mode(
                           Colors.black.withOpacity(0.8), BlendMode.darken),
-                      child: AssignmentPage()),
+                      child: const AssignmentPage()),
                 ),
               ],
             ),
@@ -54,16 +57,16 @@ class _MyHomePageState extends State<MyHomePage>
               left: 0,
               right: 0,
               child: ClipRRect(
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(25),
                   topRight: Radius.circular(25),
                 ),
                 child: Container(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.white,
                   ),
                   height: 500,
-                  child: MenuPage(),
+                  child: const MenuPage(),
                 ),
               ),
             ),
@@ -78,13 +81,13 @@ class _MyHomePageState extends State<MyHomePage>
                   boxShadow: [
                     BoxShadow(color: Colors.grey.shade300, blurRadius: 5)
                   ]),
-              margin: EdgeInsets.only(top: 240, right: 30, left: 30),
+              margin: const EdgeInsets.only(top: 240, right: 30, left: 30),
               height: 65,
               width: double.infinity,
               child: TabBar(
                 unselectedLabelColor: Colors.white,
                 labelColor: Colors.black,
-                padding: EdgeInsets.only(top: 6),
+                padding: const EdgeInsets.only(top: 6),
                 indicatorColor: Colors.transparent,
                 controller: _tabController,
                 tabs: [
