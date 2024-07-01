@@ -38,7 +38,6 @@ class _MyHomePageState extends State<MyHomePage>
             child: IndexedStack(
               index: _tabController.index,
               children: <Widget>[
-                // First tab
                 const HomePage(),
                 const AssignmentPage(),
                 Opacity(
